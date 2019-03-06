@@ -2,7 +2,7 @@
 
 # Wanted Queries
 
-This protect is to create a web form that will generate the text as if to submit to the NCIC to add, edit, or delete a warrant.
+This project is to create a web form that will generate the text as if to submit to the NCIC to add, edit, or delete a warrant.
 
 It is assumed that if incorrect entry occurs, the proper error message will be displayed to assist the user in correcting their mistakes.
 
@@ -39,7 +39,7 @@ This screen exists to give a brief description of what each of the other screens
 
 *numeric*: numbers only, 0-9
 
-*special*: these are any characters other than numbers and letters, including blank spaces ' ' - Periods '.' should not be allowed, as it will break message parsing.
+*special*: these are any characters other than numbers and letters, including blank spaces ' ' - periods '.' should not be allowed, as it will break message parsing
 
 ##### Field Requirements
 * Header: Required, 9-19 characters in length, any allowed
@@ -49,13 +49,13 @@ This screen exists to give a brief description of what each of the other screens
 * Sex: Required, 1 character in length, alphabet only, F (female) M (male) and U (unknown) are the only accepted entries
 * Race: Required, 1 character in length, alphabet only
 * Height: Required, 3 characters in length, numeric only in FII format, where F is feet and I is inches
-* Weight: Required, 1-3 characters in length, numeric only in lbs, leading zeros to be entered systematically as necessary to change the length to 3 characters in the assembled query.
+* Weight: Required, 1-3 characters in length, numeric only in lbs., leading zeros to be entered systematically as necessary to change the length to 3 characters in the assembled query.
 * Hair: Required, 3-10 characters in length, alpha only
 * Offense: Required, 5-15 characters in length, any allowed
 * Date of Warrant/Violation: Required, 10 characters in length, numeric in MM/DD/YYYY format (allows dates from 1900 to today +1 day, to account for time zone differences)
-* Drivers License: Optional, 1-20 characters in length, any characters allowed, if included requires DL State & DL Expiration Year
-* DL State: Optional, 2 characters in length, State Abbreviations only, if included requires Drivers License & DL Expiration Year
-* DL Expiration Date: Optional, 10 characters in length, numeric in MM/DD/YYYY format, if included requires Drivers License & DL State, can be future dated.
+* Driver’s License: Optional, 1-20 characters in length, any characters allowed, if included requires DL State & DL Expiration Year
+* DL State: Optional, 2 characters in length, State Abbreviations only, if included requires Driver’s License & DL Expiration Year
+* DL Expiration Date: Optional, 10 characters in length, numeric in MM/DD/YYYY format, if included requires Driver’s License & DL State, can be future dated.
 * License Plate: Optional, 5-8 alphanumeric characters in length, if included requires License State & License Year
 * License State: Optional, 2 characters in length, State Abbreviations only, if included requires License Plate and License Year
 * License Expiration Date: Optional, 10 characters in length, numeric in MM/DD/YYYY format, if included requires License Plate and License Year, can be future dated.
@@ -93,13 +93,13 @@ Upon successful entry, a text message will be created, which consists of each of
 * Sex: Optional, 1 character in length, alphabet only, F (female) M (male) and U (unknown) are the only accepted entries
 * Race: Optional, 1 character in length, alphabet only
 * Height: Optional, 3 characters in length, numeric only in FII format, where F is feet and I is inches
-* Weight: Optional, 1-3 characters in length, numeric only in lbs, leading zeros to be entered systematically as necessary to change the length to 3 characters in the assembled query.
+* Weight: Optional, 1-3 characters in length, numeric only in lbs., leading zeros to be entered systematically as necessary to change the length to 3 characters in the assembled query.
 * Hair: Optional, 3-10 characters in length, alpha only
 * Offense: Optional, 5-15 characters in length, any allowed
 * Date of Warrant/Violation: Optional, 10 characters in length, numeric in MM/DD/YYYY format (allows dates from 1900 to today +1 day, to account for time zone differences)
-* Drivers License: Optional, 1-20 characters in length, any characters allowed, if included requires DL State & DL Expiration Year
-* DL State: Optional, 2 characters in length, State Abbreviations only, if included requires Drivers License & DL Expiration Year
-* DL Expiration Date: Optional, 10 characters in length, numeric in MM/DD/YYYY format, if included requires Drivers License & DL State, can be future dated.
+* Driver’s License: Optional, 1-20 characters in length, any characters allowed, if included requires DL State & DL Expiration Year
+* DL State: Optional, 2 characters in length, State Abbreviations only, if included requires Driver’s License & DL Expiration Year
+* DL Expiration Date: Optional, 10 characters in length, numeric in MM/DD/YYYY format, if included requires Driver’s License & DL State, can be future dated.
 * License Plate: Optional, 5-8 alphanumeric characters in length, if included requires License State & License Year
 * License State: Optional, 2 characters in length, State Abbreviations only, if included requires License Plate and License Year
 * License Expiration Date: Optional, 10 characters in length, numeric in MM/DD/YYYY format, if included requires License Plate and License Year, can be future dated
@@ -125,7 +125,7 @@ Upon successful entry, a text message will be created, which consists of each of
 *special*: these are any characters other than numbers and letters, including blank spaces ' ' - Periods '.' should not be allowed, as it will break message parsing.
 
 ##### Field Requirements
-* Warrant ID: Required, 10 characers in length, numeric only - this ID is returned to the sending organization by the receiving organization when a warrant is entered.
+* Warrant ID: Required, 10 characters in length, numeric only - this ID is returned to the sending organization by the receiving organization when a warrant is entered.
 * Reason for Cancellation: Required, 10-150 characters in length, any allowed - this is a free text field to explain why a warrant is being cancelled.
 * Date of Cancellation: Required, 10 characters in length, numeric in MM/DD/YYYY format - this is the date the cancellation is to take effect, can be future dated.
 
