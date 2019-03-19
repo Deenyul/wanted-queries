@@ -2,7 +2,7 @@
 
 # Wanted Queries
 
-This protect is to create a web form that will generate the text as if to submit to the NCIC to add, edit, or delete a warrant.
+This project is to create a web form that will generate the text as if to submit to the NCIC to add, edit, or delete a warrant.
 
 It is assumed that if incorrect entry occurs, the proper error message will be displayed to assist the user in correcting their mistakes.
 
@@ -39,7 +39,7 @@ This screen exists to give a brief description of what each of the other screens
 
 *numeric*: numbers only, 0-9
 
-*special*: these are any characters other than numbers and letters, including blank spaces ' ' - Periods '.' should not be allowed, as it will break message parsing.
+*special*: these are any characters other than numbers and letters, including blank spaces ' ' - periods '.' should not be allowed, as it will break message parsing.
 
 ##### Field Requirements
 * Header: Required, 9-19 characters in length, any allowed
@@ -54,10 +54,10 @@ This screen exists to give a brief description of what each of the other screens
 * Offense: Required, 5-15 characters in length, any allowed
 * Date of Warrant/Violation: Required, 10 characters in length, numeric in MM/DD/YYYY format (allows dates from 1900 to today +1 day, to account for time zone differences)
 * Drivers License: Optional, 1-20 characters in length, any characters allowed, if included requires DL State & DL Expiration Year
-* DL State: Optional, 2 characters in length, State Abbreviations only, if included requires Drivers License & DL Expiration Year
+* DL State: Optional, 2 characters in length, state abbreviations only, if included requires Drivers License & DL Expiration Year
 * DL Expiration Date: Optional, 10 characters in length, numeric in MM/DD/YYYY format, if included requires Drivers License & DL State, can be future dated.
 * License Plate: Optional, 5-8 alphanumeric characters in length, if included requires License State & License Year
-* License State: Optional, 2 characters in length, State Abbreviations only, if included requires License Plate and License Year
+* License State: Optional, 2 characters in length, state abbreviations only, if included requires License Plate and License Year
 * License Expiration Date: Optional, 10 characters in length, numeric in MM/DD/YYYY format, if included requires License Plate and License Year, can be future dated.
 
 ##### Results
